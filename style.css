@@ -370,7 +370,40 @@ section {
 }
 
 /* Footer*/
+footer {
+    background-color: var(--baseShade1);
+    text-align: center;
+}
 
+footer .row {
+    padding: 3rem 0;
+}
+
+footer .column {
+    width: 100%;
+}
+
+footer .row:nth-child(1) {
+    border-bottom: 0.2rem solid var(--whiteShade1);
+}
+
+footer .row:nth-child(2) {
+    justify-content: center;
+    gap: 20rem;
+}
+
+footer h3 {
+    color: var(--blackShade1);
+}
+
+footer p {
+    color: var(--whiteShade2);
+}
+
+footer i {
+    color: var(--blackShade1);
+    font-size: 3rem;
+}
 
 /* Copyright */
 
