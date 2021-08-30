@@ -76,10 +76,17 @@ h1 {
 
 h2 {
     font-size: var(--headingFontSize2);
+    color: var(--blackShade1);
+    font-weight: 700;
+    margin: 2rem 0 5rem 0;
+    text-align: center;
 }
 
 h3 {
     font-size: var(--headingFontSize3);
+    color: var(--blackShade1);
+    font-weight: 700;
+    margin: 1.5rem 0;
 }
 
 h4 {
@@ -195,3 +202,82 @@ header img {
     margin-top: 2rem;
 }
 
+section {
+    padding: 5rem 7rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+/* Section: About */
+.about .row {
+    align-items: center;
+}
+
+.about .row .column {
+    width: 100%;
+    padding: 0;
+}
+
+.about img {
+    display: block;
+    width: 80%;
+}
+
+.about p {
+    text-align: justify;
+}
+
+/* Section: Benefits */
+.benefits .column {
+    padding: 4rem 2rem;
+    border-radius: var(--borderRadious1);
+}
+
+.benefits .column:hover {
+  background-color: var(--baseShade1);  
+}
+
+.benefits .column:hover p {
+    color: var(--whiteShade1);
+}
+
+.benefits .img-container {
+    height: 10rem;
+    width: 10rem;
+    background-color: var(--whiteShade1);
+    margin: auto;
+    border-radius: 50%;
+}
+
+.benefits img {
+    width: 7em;
+    display: block;
+    margin: auto;
+    padding: 1.1rem 0;
+}
+
+.benefits h3 {
+    text-align: center;
+}
+
+.benefits p {
+    text-align: center;
+}
+
+/* Section: Pricing */
+
+
+/* Section: NewsLetter */
+
+
+/* Footer*/
+
+
+/* Copyright */
+
+
+/* Scroll to top buttons*/
