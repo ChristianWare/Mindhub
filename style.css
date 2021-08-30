@@ -36,6 +36,65 @@ html {
    scroll-behavior: smooth; 
 }
 
+/* utility Classes */
+
+.btn-primary,
+.btn-secondary {
+    padding: 1rem 2rem;
+    border-radius: var(--borderRadious2);
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+
+.btn-primary {
+    background-color: var(--baseShade1);
+    color: var(--whiteShade1);
+}
+
+.btn-primary:hover {
+    background-color: var(--baseShade2);
+}
+
+.btn-secondary {
+    background-color: var(--whiteShade1);
+    border: 0.3rem solid var(--baseShade1);
+    color: var(--baseShade1);
+}
+
+.btn-secondary:hover {
+   border: 0.3rem solid var(--baseShade2); 
+   color: var(--baseShade2)
+}
+
+h1 {
+    font-size: var(--headingFontSize1);
+    margin-bottom: 2rem;
+    word-spacing: 1rem;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: var(--headingFontSize2);
+}
+
+h3 {
+    font-size: var(--headingFontSize3);
+}
+
+h4 {
+    font-size: var(--headingFontSize4);
+}
+
+button,
+p,
+input[type='email'] {
+    font-size: var(--baseFontSize);
+    color: var(--blackShade1);
+    line-height: 1.8;
+    font-weight: 400;   
+}
+
 /* Scroll Indicator */
 .progress-container {
     width: 100%;
@@ -64,7 +123,7 @@ nav {
     left: 0;
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.5);
-    background-color: blur(00.8rem);
+    backdrop-filter: blur(00.8rem);
 }
 
 #logo {
@@ -103,3 +162,36 @@ nav li a:hover:before {
   background-color: var(--baseShade1);
   width: 110%;
 }
+
+/* Active SideNave Menu */
+
+
+/* Sticky Menu */
+
+
+/* Header */
+header {
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    align-items: center;
+}
+
+.hero-text p {
+  text-align: justify;
+}
+
+header img {
+    display: block;
+    width: 100%;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 2rem;
+}
+
+.hero-btns button {
+    margin-top: 2rem;
+}
+
