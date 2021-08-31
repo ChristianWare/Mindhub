@@ -145,8 +145,12 @@ nav {
     backdrop-filter: blur(00.8rem);
 }
 
+nav .fas,
 #logo {
     font-size: var(--headingFontSize4);
+}
+
+#logo {
     font-weight: 700;
 }
 
@@ -163,6 +167,10 @@ nav a {
     display: block;
     position: relative;
     font-size: var(--headingFontSize4);
+}
+
+nav i.fas {
+    display: none;
 }
 
 /* Navigation Link Hover */
@@ -182,8 +190,13 @@ nav li a:hover:before {
   width: 110%;
 }
 
-/* Active SideNave Menu */
-
+/* Active SideNav Menu */
+nav ul.active {
+    left: 0;
+}
+nav ul.active li a {
+    font-size: var(--headingFontSize3);
+}
 
 /* Sticky Menu */
 
@@ -214,7 +227,8 @@ header img {
     margin-top: 2rem;
 }
 
-section {
+section, 
+footer {
     padding: 5rem 7rem;
 }
 
@@ -406,6 +420,34 @@ footer i {
 }
 
 /* Copyright */
+.copyright {
+    padding: 2.5rem 0;
+    background-color: var(--whiteShade2);
+    text-align: center;
+}
 
-
+.copyright p {
+    color: var(--blackShade1);
+}
 /* Scroll to top buttons*/
+#scroll-top-btn {
+    display: grid;
+    place-items: center;
+    height: 4rem;
+    width: 4rem;
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+    background-color: var(--baseShade1);
+    border: none;
+    outline: none;
+    border: 0.4rem solid var(--whiteShade1);
+    border-radius: var(--borderRadious2);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
+}
+
+#scroll-top-btn .fas {
+    color: var(--whiteShade1);
+    font-size: 2rem;
+    line-height: 0;
+}
