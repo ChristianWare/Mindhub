@@ -199,7 +199,9 @@ nav ul.active li a {
 }
 
 /* Sticky Menu */
-
+.sticky {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.03);
+}
 
 /* Header */
 header {
@@ -431,7 +433,7 @@ footer i {
 }
 /* Scroll to top buttons*/
 #scroll-top-btn {
-    display: grid;
+    display: none;
     place-items: center;
     height: 4rem;
     width: 4rem;

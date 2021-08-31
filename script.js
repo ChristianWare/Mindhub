@@ -22,4 +22,23 @@ window.onscroll = function () {
     document.documentElement.clientHeight;
   let scroll = (pos * 100) / calcHeight;
   document.getElementById("progress").style.width = `${scroll}%`;
+
+  //   Scroll to Top Button
+  let scrollTopButton = document.getElementById("scroll-top-btn");
+  if (pos > 300) {
+    scrollTopButton.style.display = "grid";
+  } else {
+    scrollTopButton.style.display = "none";
+  }
+
+  scrollTopButton.addEventListener('click', () => {
+      document.documentElement.scrollTop = 0;
+  })
+
+//   Sticky Navbar
+if (pos > 0) {
+    navBar.classList.add('sticky');
+} else {
+    navBar.classList.remove('sticky');
+}
 };
