@@ -13,3 +13,13 @@ navLinks.forEach((navLink) => {
     hamMenu.classList.toggle("fa-times");
   });
 });
+
+window.onscroll = function () {
+  // Scroll Indicator
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scroll = (pos * 100) / calcHeight;
+  document.getElementById("progress").style.width = `${scroll}%`;
+};

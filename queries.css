@@ -75,4 +75,33 @@
     html {
         font-size: 46.87%;
     }
+    nav .fas,
+    #logo {
+        font-size: var(--headingFontSize3);
+    }
+    nav ul {
+        height: calc(100vh -52.13px);
+        top: 52.13px;
+    }
+    .hero-btns {
+        width: 100%;
+    }
+    section,
+    footer {
+        padding: 5rem 2rem;
+    }
+    .newsletters {
+       padding: 3rem 2rem; 
+    }
+    .newsletters form {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .newsletters form input,
+    .newsletters form button {
+        width: 100%;
+    }
+    input[type='email'] {
+        padding: 1.7rem 2em;
+    }
 }
